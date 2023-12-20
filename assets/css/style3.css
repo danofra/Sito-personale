@@ -10,10 +10,10 @@ form {
   margin: 5px;
   padding: 5px;
 }
-
 html {
   max-width: 1344px;
   margin: 0 auto;
+  background-color: rgb(0, 31, 63, 0.5);
 }
 body {
   font-family: "Courier New", monospace;
@@ -90,6 +90,9 @@ article {
   border-radius: 8px;
   text-align: center;
 }
+article li {
+  text-align: left;
+}
 #sec-1 #art-1 h1 {
   font-size: 25px;
 }
@@ -102,6 +105,7 @@ article {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 250px;
   width: 250px;
   height: 250px;
   border-radius: 100%;
@@ -110,6 +114,10 @@ h1,
 h2 {
   color: #4caf50;
   text-align: center;
+  font-weight: bold;
+}
+h2 {
+  font-size: 20px;
 }
 footer {
   background-color: #003366;
@@ -177,6 +185,7 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 250px;
     width: 250px;
     height: 250px;
     border-radius: 100%;
@@ -188,8 +197,12 @@ hr {
     font-size: 70%;
   }
   #img {
-    width: 150px;
-    height: 150px;
+    min-width: 250px;
+    width: 250px;
+    height: 250px;
     border-radius: 100%;
+  }
+  article li {
+    text-align: center;
   }
 }
