@@ -182,10 +182,10 @@ hr {
     border-radius: 100%;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 600px) {
   main,
   footer {
-    font-size: 80%;
+    font-size: 70%;
   }
   #img {
     width: 150px;
