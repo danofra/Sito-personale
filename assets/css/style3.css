@@ -10,6 +10,7 @@ form {
   margin: 5px;
   padding: 5px;
 }
+
 html {
   max-width: 1344px;
   margin: 0 auto;
@@ -36,6 +37,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+main,
+footer {
+  font-size: 100%;
 }
 nav ul {
   list-style: none;
@@ -127,6 +132,10 @@ hr {
   color: #337ab7;
 }
 @media screen and (max-width: 768px) {
+  main,
+  footer {
+    font-size: 100%;
+  }
   header {
     flex-direction: column;
     align-items: center;
@@ -173,9 +182,14 @@ hr {
     border-radius: 100%;
   }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   main,
   footer {
     font-size: 80%;
+  }
+  #img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
   }
 }
