@@ -49,7 +49,16 @@ nav ul {
 nav li {
   margin-right: 20px;
   font-size: 18px;
+  transition: color 0.3s ease;
+}
+nav li a {
   color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+nav li a:hover {
+  color: #4caf50;
+
   transition: color 0.3s ease;
 }
 #art-1 ul li {
@@ -139,6 +148,15 @@ hr {
 .icons:hover {
   color: #337ab7;
 }
+.icons1 {
+  font-size: 70px;
+  margin: 0 50px;
+  color: #4caf50;
+  transition: color 0.3s ease;
+}
+.icons1:hover {
+  color: #337ab7;
+}
 @media screen and (max-width: 768px) {
   main,
   footer {
@@ -197,9 +215,9 @@ hr {
     font-size: 70%;
   }
   #img {
-    min-width: 250px;
-    width: 250px;
-    height: 250px;
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
   }
   article li {
