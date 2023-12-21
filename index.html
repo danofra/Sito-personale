@@ -16,32 +16,29 @@
   </head>
   <body>
     <header>
-      <a href="./index.html"><i class="fas fa-code icons1"></i></a>
-      <!-- <img src="https://placehold.co/50" alt="logo" width="" /> -->
+      <a href="./index.html"><i class="fas fa-code icons1 ico"></i></a>
       <nav>
         <ul>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!--<form>
-        <input type="search" placeholder="Ricerca" />
-        <button>Ricerca</button>
-      </form> -->
     </header>
     <main>
       <section id="sec-1">
         <article id="art-1">
-          <h1>&gt;Hello world&lt;</h1>
+          <h1>&gt; Hello world &lt;</h1>
           <p>👋 Hi, I’m Liborio Daniele, for the friends "Dano"</p>
         </article>
       </section>
-      <section id="sec-2">
+      <!-- fine prima section -->
+      <!-- inizio seconda section -->
+      <section id="sec-2" name="about">
         <article id="art-1">
           <h2>About me</h2>
           <article id="art-2">
-            <div id="img"></div>
+            <div id="img" class="expanding-div"></div>
             <ul type="circle">
               <li>I like playing basketball and playing the guitar 🏀 🎸</li>
               <li>
@@ -57,6 +54,112 @@
           </article>
         </article>
       </section>
+      <!-- fine seconda section -->
+      <!-- inizio terza section -->
+      <section id="portfolio" name="portfolio">
+        <article class="portfolio-item">
+          <h2>My Portfolio</h2>
+          <img src="https://placekitten.com/500/200" alt="pvcsrl" />
+          <h3>PVC srl</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            soluta, atque repellat dolore maiores quae expedita velit nulla quos
+            beatae animi impedit, error voluptas quod quia eaque aliquam enim?
+            Deserunt?
+          </p>
+          <p><a href="https://pvcsrl.com/">Visita il sito web</a></p>
+        </article>
+        <article class="portfolio-item">
+          <img src="https://placekitten.com/500/200" alt="Portfolio Item 2" />
+          <h3>Project Title 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            soluta, atque repellat dolore maiores quae expedita velit nulla quos
+            beatae animi impedit, error voluptas quod quia eaque aliquam enim?
+            Deserunt?
+          </p>
+          <p><a href="#">Visita il sito web</a></p>
+        </article>
+        <article class="portfolio-item">
+          <img src="https://placekitten.com/500/200" alt="Portfolio Item 2" />
+          <h3>Project Title 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            soluta, atque repellat dolore maiores quae expedita velit nulla quos
+            beatae animi impedit, error voluptas quod quia eaque aliquam enim?
+            Deserunt?
+          </p>
+          <p><a href="#">Visita il sito web</a></p>
+        </article>
+        <article class="portfolio-item">
+          <img src="https://placekitten.com/500/200" alt="Portfolio Item 2" />
+          <h3>Project Title 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            soluta, atque repellat dolore maiores quae expedita velit nulla quos
+            beatae animi impedit, error voluptas quod quia eaque aliquam enim?
+            Deserunt?
+          </p>
+          <p><a href="#">Visita il sito web</a></p>
+        </article>
+        <article class="portfolio-item">
+          <img src="https://placekitten.com/500/200" alt="Portfolio Item 2" />
+          <h3>Project Title 5</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            soluta, atque repellat dolore maiores quae expedita velit nulla quos
+            beatae animi impedit, error voluptas quod quia eaque aliquam enim?
+            Deserunt?
+          </p>
+          <p><a href="#">Visita il sito web</a></p>
+        </article>
+      </section>
+      <!-- fine terza section -->
+      <!-- inizio quarta section -->
+      <section id="contact" name="contact">
+        <article>
+          <h2>Contact Me</h2>
+          <form id="contactForm">
+            <label for="firstName" class="form">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Your first name"
+              required
+            />
+            <label for="lastName" class="form">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Your last name"
+              required
+            />
+            <label for="profession" class="form">Profession:</label>
+            <input
+              type="text"
+              id="profession"
+              name="profession"
+              placeholder="Your profession"
+              required
+            />
+            <label for="message" class="form">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+              rows="10"
+              cols="50"
+              required
+            ></textarea>
+            <button type="submit" class="form" onclick="alert">
+              Send Message
+            </button>
+          </form>
+        </article>
+      </section>
+      <!-- fine quarta section -->
     </main>
     <footer>
       <hr />
@@ -75,6 +178,9 @@
       ></a>
       <p><span id="year"> </span> &copy ReadMe.md By Liborio Daniele Frasca</p>
     </footer>
-    <script src="./js/js.js"></script>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <i class="fas fa-arrow-alt-circle-up"></i>
+    </button>
+    <script src="./js/index.js"></script>
   </body>
 </html>
