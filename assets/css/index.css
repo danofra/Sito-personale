@@ -281,10 +281,15 @@ button#scrollToTopBtn:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 250px;
-    width: 250px;
-    height: 250px;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
+  }
+  #img.expanded {
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -293,10 +298,15 @@ button#scrollToTopBtn:hover {
     font-size: 70%;
   }
   #img {
-    min-width: 200px;
-    width: 200px;
-    height: 200px;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
+  }
+  #img.expanded {
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
   }
   article li {
     text-align: center;
