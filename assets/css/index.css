@@ -311,4 +311,7 @@ button#scrollToTopBtn:hover {
   article li {
     text-align: center;
   }
+  .portfolio-item img {
+    width: 250px;
+  }
 }
