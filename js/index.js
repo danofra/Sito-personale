@@ -24,7 +24,7 @@ setTimeout(function () {
 
 // Funzione per controllare quando gli elementi sono visibili nella finestra di visualizzazione
 function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
+  const rect = el.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -53,4 +53,5 @@ contForm.addEventListener("submit", function (event) {
   alert(
     "Il tuo messaggio è stato inviato con successo. Ti risponderemo non appena possibile!"
   );
+  contForm.reset();
 });

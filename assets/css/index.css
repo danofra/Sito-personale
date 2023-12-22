@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+/* GENERAL */
 body,
 h1,
 h2,
@@ -10,12 +10,12 @@ form {
   margin: 5px;
   padding: 5px;
 }
+/* HTML */
 html {
-  max-width: 1344px;
-  margin: 0 auto;
-  background-color: rgb(0, 31, 63, 0.5);
+  background-color: 001f3f;
   scroll-behavior: smooth;
 }
+/* BODY */
 body {
   font-family: "Courier New", monospace;
   line-height: 1.6;
@@ -30,6 +30,7 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+/* HEADER */
 header {
   background-color: #003366;
   padding: 20px;
@@ -41,8 +42,8 @@ header {
 }
 .ico {
   width: 100px;
+  animation: moveIco 2s linear 0s alternate;
 }
-
 .ico:hover {
   animation-name: rotate;
   animation-duration: 0.7s;
@@ -56,6 +57,16 @@ header {
     transform: rotate(360deg);
   }
 }
+.icons1 {
+  font-size: 70px;
+  margin: 0 50px;
+  color: #4caf50;
+  transition: color 0.5s ease;
+}
+.icons1:hover {
+  color: #337ab7;
+}
+/* MAIN */
 main,
 footer {
   font-size: 100%;
@@ -91,7 +102,7 @@ form {
   margin-top: 10px;
 }
 .form {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 #message {
   padding: 8px;
@@ -167,6 +178,26 @@ h2 {
 h2 {
   font-size: 20px;
 }
+.portfolio-item {
+  /* width: 31%; */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.portfolio-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio-item p a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.portfolio-item p a:hover {
+  color: #4caf50;
+  transition: color 0.5s ease;
+}
+/* FOOTER */
 footer {
   background-color: #003366;
   padding: 20px;
@@ -187,33 +218,14 @@ hr {
 .icons:hover {
   color: #337ab7;
 }
-.icons1 {
-  font-size: 70px;
-  margin: 0 50px;
-  color: #4caf50;
-  transition: color 0.5s ease;
-}
-.icons1:hover {
-  color: #337ab7;
-}
-.portfolio-item {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.portfolio-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.portfolio-item p a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.5s ease;
-}
-.portfolio-item p a:hover {
-  color: #4caf50;
-  transition: color 0.5s ease;
-}
+
+/* #portfolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+} */
+
 button#scrollToTopBtn {
   position: fixed;
   bottom: 20px;
@@ -267,10 +279,10 @@ button#scrollToTopBtn:hover {
     border-radius: 4px;
   }
 }
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   #sec-2 #art-2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
   #img {
@@ -287,12 +299,68 @@ button#scrollToTopBtn:hover {
     border-radius: 100%;
   }
   #img.expanded {
+    min-width: 300px;
+    width: 300px;
+    height: 300px;
+  }
+} */
+@media screen and (max-width: 640px) {
+  main,
+  footer {
+    font-size: 70%;
+  }
+  #img {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  #img.expanded {
     min-width: 200px;
     width: 200px;
     height: 200px;
   }
+  article li {
+    text-align: center;
+  }
+  .portfolio-item img {
+    width: 400px;
+  }
+  .ico {
+    width: 100px;
+    animation: none;
+  }
 }
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 570px) {
+  main,
+  footer {
+    font-size: 70%;
+  }
+  #img {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  #img.expanded {
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+  }
+  article li {
+    text-align: center;
+  }
+  .portfolio-item img {
+    width: 350px;
+  }
+  .ico {
+    width: 100px;
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
   main,
   footer {
     font-size: 70%;
@@ -313,5 +381,40 @@ button#scrollToTopBtn:hover {
   }
   .portfolio-item img {
     width: 250px;
+  }
+  .ico {
+    width: 100px;
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main,
+  footer {
+    font-size: 60%;
+  }
+  #sec-1 #art-1 h1 {
+    font-size: 23px;
+  }
+  #img {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  #img.expanded {
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+  }
+  article li {
+    text-align: center;
+  }
+  .portfolio-item img {
+    width: 230px;
+  }
+  .ico {
+    width: 100px;
+    animation: none;
   }
 }
