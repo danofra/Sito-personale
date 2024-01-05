@@ -106,7 +106,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 #art-1 ul li {
