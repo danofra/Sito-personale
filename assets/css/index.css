@@ -313,15 +313,15 @@ button#scrollToTopBtn:hover {
     font-size: 70%;
   }
   #img {
-    min-width: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-  }
-  #img.opacity {
     min-width: 200px;
     width: 200px;
     height: 200px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 5s;
+  }
+  #img.opacity {
+    opacity: 1;
   }
   article li {
     text-align: center;
@@ -341,15 +341,15 @@ button#scrollToTopBtn:hover {
     font-size: 70%;
   }
   #img {
-    min-width: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-  }
-  #img.opacity {
     min-width: 200px;
     width: 200px;
     height: 200px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 5s;
+  }
+  #img.opacity {
+    opacity: 1;
   }
   article li {
     text-align: center;
@@ -369,15 +369,15 @@ button#scrollToTopBtn:hover {
     font-size: 70%;
   }
   #img {
-    min-width: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-  }
-  #img.opacity {
     min-width: 150px;
     width: 150px;
     height: 150px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 5s;
+  }
+  #img.opacity {
+    opacity: 1;
   }
   article li {
     text-align: center;
@@ -400,15 +400,15 @@ button#scrollToTopBtn:hover {
     font-size: 23px;
   }
   #img {
-    min-width: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-  }
-  #img.opacity {
     min-width: 150px;
     width: 150px;
     height: 150px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 5s;
+  }
+  #img.opacity {
+    opacity: 1;
   }
   article li {
     text-align: center;
