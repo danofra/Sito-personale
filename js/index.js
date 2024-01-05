@@ -19,7 +19,7 @@ window.onscroll = function () {
 
 //Funzione che cambia classe alla foto me per allagarla
 setTimeout(function () {
-  document.getElementById("img").classList.add("expanded");
+  document.getElementById("img").classList.add("opacity");
 }, 0.1);
 
 // Funzione per controllare quando gli elementi sono visibili nella finestra di visualizzazione
