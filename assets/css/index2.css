@@ -214,6 +214,7 @@ h2::before {
   border: 3px solid #4caf50;
   margin-right: 20px;
   margin-bottom: 20px;
+  transition: 20s;
 }
 
 ul {

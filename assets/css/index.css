@@ -183,7 +183,7 @@ article li {
   opacity: 0;
   transition: 5s;
 }
-#img.opacity {
+#img .opacity {
   opacity: 1;
 }
 h1,
